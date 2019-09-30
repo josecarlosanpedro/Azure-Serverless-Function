@@ -6,15 +6,6 @@
       "type": "timerTrigger",
       "direction": "in",
       "topicName": "%ENV%"
-    },
-    {
-      "name": "queueItem",
-      "type": "httpTrigger",
-      "direction": "in",
-      "topicName": "%ENV%",
-      "methods": [
-        "patch"
-      ]
     }
   ],
   "scriptFile": "../dist/TimerTrigger/index.js"
