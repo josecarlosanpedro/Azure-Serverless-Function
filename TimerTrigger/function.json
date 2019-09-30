@@ -1,0 +1,12 @@
+{
+  "bindings": [
+    {
+      "schedule": "0 */1 * * * *",
+      "name": "queueItem",
+      "type": "timerTrigger",
+      "direction": "in",
+      "topicName": "%ENV%"
+    }
+  ],
+  "scriptFile": "../dist/TimerTrigger/index.js"
+}
