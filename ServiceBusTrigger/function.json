@@ -5,8 +5,7 @@
       "type": "serviceBusTrigger",
       "direction": "in",
       "topicName": "%ENV%",
-      "subscriptionName": "service-bus-subscription-name",
-      "connection": "AzureWebJobsServiceBus"
+      "subscriptionName": "service-bus-subscription-name"
     }
   ],
   "scriptFile": "../dist/ServiceBusTrigger/index.js"
