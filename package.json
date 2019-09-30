@@ -1,0 +1,28 @@
+{
+  "name": "azure-function",
+  "description": "",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prestart": "npm run build && func extensions install",
+    "start:host": "func start",
+    "start": "npm run start:host & npm run watch",
+    "build:production": "npm run prestart && npm prune --production",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "@types/sprintf": "^0.1.0",
+    "axios": "^0.19.0",
+    "lodash": "^4.17.11",
+    "qs": "^6.7.0",
+    "sprintf": "^0.1.5"
+  },
+  "devDependencies": {
+    "@azure/functions": "^1.0.2-beta2",
+    "@types/elasticsearch": "^5.0.32",
+    "@types/lodash": "^4.14.123",
+    "@types/node": "^12.0.8",
+    "typescript": "^3.3.3"
+  }
+}

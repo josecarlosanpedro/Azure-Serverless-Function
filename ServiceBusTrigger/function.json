@@ -1,0 +1,13 @@
+{
+  "bindings": [
+    {
+      "name": "queueItem",
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "topicName": "%ENV%",
+      "subscriptionName": "service-bus-subscription-name",
+      "connection": "AzureWebJobsServiceBus"
+    }
+  ],
+  "scriptFile": "../dist/ServiceBusTrigger/index.js"
+}

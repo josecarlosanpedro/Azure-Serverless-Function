@@ -1,0 +1,15 @@
+{
+  "bindings": [
+    {
+      "name": "queueItem",
+      "type": "httpTrigger",
+      "direction": "in",
+      "topicName": "%ENV%",
+      "connection": "AzureWebJobsServiceBus",
+      "methods": [
+        "patch"
+      ]
+    }
+  ],
+  "scriptFile": "../dist/HTTPTrigger/index.js"
+}
